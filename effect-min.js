@@ -43,12 +43,13 @@ function w3_close() {
 // }
 
 
-// loading screen
 // check if page is loaded 
-//if(document.readyState === "complete") {
-  // make loading screen go away
-  // document.getElementById('loading').style.display = none;
-//}
+var loader = document.getElementById('loading');
+
+window.addEventListener ("load", function() {
+  setTimeout(function(){loader.className = 'fadeout'}, 100);
+  clearTimeout()
+});
 
 
 // Get the button:
@@ -154,6 +155,15 @@ var modal46 = document.getElementById('g6');
 var modal47 = document.getElementById('g7');
 var modal48 = document.getElementById('g8');
 
+
+var modal51 = document.getElementById('l1');
+var modal52 = document.getElementById('l2');
+var modal53 = document.getElementById('l3');
+var modal54 = document.getElementById('l4');
+var modal55 = document.getElementById('l5');
+var modal56 = document.getElementById('l6');
+var modal57 = document.getElementById('l7');
+var modal58 = document.getElementById('l8');
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
 // ____________________________ for gallery_____________________________________
@@ -240,7 +250,31 @@ window.onclick = function(event) {
     modal48.style.display = "none";
   }
 
-
+/* _____________ Lab Outing _________________________*/
+if (event.target == modal51) {
+  modal51.style.display = "none";
+}
+if (event.target == modal52) {
+  modal52.style.display = "none";
+}
+if (event.target == modal53) {
+  modal53.style.display = "none";
+}
+if (event.target == modal54) {
+  modal54.style.display = "none";
+}
+if (event.target == modal55) {
+  modal55.style.display = "none";
+}
+if (event.target == modal56) {
+  modal56.style.display = "none";
+}
+if (event.target == modal57) {
+  modal57.style.display = "none";
+}
+if (event.target == modal58) {
+  modal58.style.display = "none";
+}
 
 
 
@@ -248,3 +282,23 @@ window.onclick = function(event) {
 
 }
 
+
+// -----------------------------------parallax
+// const parallax4 = document.getElementById("parallax7");
+// const parallax5 = document.getElementById("parallax8");
+// let s_width = window.innerWidth;
+// window.addEventListener("scroll", function () {
+//   let offset = window.pageYOffset;
+//   const rect4 = parallax4.getBoundingClientRect();
+//   const rect5 = parallax5.getBoundingClientRect();
+//   const y4 = rect4.top + window.scrollY;
+//   const y5 = rect5.top + window.scrollY;
+//   parallax4.style.backgroundPositionX = (offset-y4) * 0.15 + "px";
+//   parallax5.style.backgroundPositionX = (offset-y5) * -0.15 -150 + "px";
+// });
+/* add artificial scroll when loading page */
+window.dispatchEvent(new CustomEvent('scroll'))
+// Add an event listener to the button to call displayPosition on click
+// button.addEventListener("click", displayPosition);
+// Add an event listener to the window to call displayPosition on resize
+// window.addEventListener("resize", displayPosition);

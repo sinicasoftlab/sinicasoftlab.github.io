@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3-me.css">
+    <link rel="icon" type="image/png" href="images/favicon2.png">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css"> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-brown.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Alumni - KH Lin's Lab 2023</title>
+</head>
+<body>
+    <!-- ____________________________ Loader ____________________________ -->
+  <div id="loading"><span class="loader"></span></div>
+    <!--____________________________ Navbar (mobile)_________________________________-->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme-l3 w3-top w3-left-align w3-medium">
+        <a class="w3-bar-item w3-button w3-left w3-hide-large w3-large w3-theme-l1 w3-hover-white" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a class="w3-bar-item w3-button w3-right w3-hide-large myBtnstyle2" href="http://scholar.google.com/citations?hl=en&amp;user=XPg4_ToAAAAJ" target="_blank" >Google Scholar</a>
+        <a class="w3-bar-item w3-button w3-right w3-hide-large myBtnstyle2" href="#myFooter" onclick="w3_close()" >Contact</a>
+        <a href="#" class="w3-bar-item w3-button w3-right w3-hide-large myBtnstyle2">中/En</a>
+        <a class="w3-bar-item w3-button w3-right w3-hide-large myBtnstyle2" href="https://www.phys.sinica.edu.tw/" target="_blank" >IoP</a>
+      </div>
+    </div>
+
+    <!--__________________________________ Sidebar (desktop)____________________________________________-->
+    <nav class="w3-sidebar w3-theme-l3 w3-bar-block w3-collapse w3-large w3-animate-left gradcolor w3-card-4" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-padding w3-hover-white w3-hide-large w3-round-xxlarge" title="Close Menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <h3 class="w3-bar-item titlefont"><b>Keng-Hui Lin's Lab</b></h3>
+
+      <a class="w3-bar-item w3-button animbutton" href="index.htm#news" onclick="w3_close()">News</a>
+      <a class="w3-bar-item w3-button animbutton " href="index.htm#members" onclick="w3_close()">Members</a>
+      <a class="w3-bar-item w3-button animbutton " href="#" onclick="w3_close()">Alumni</a>
+      <a class="w3-bar-item w3-button animbutton " href="index.htm#research" onclick="w3_close()">Research Focus</a>
+      <a class="w3-bar-item w3-button animbutton " href="index.htm#publications" onclick="w3_close()">Publications</a>
+      <a class="w3-bar-item w3-button animbutton " href="index_facility_gallery.htm#facility" onclick="w3_close()">Facilities</a>
+      <a class="w3-bar-item w3-button animbutton " href="index.htm#openings" onclick="w3_close()">Openings</a>
+      <a class="w3-bar-item w3-button animbutton " href="index_facility_gallery.htm#gallery" onclick="w3_close()">Gallery</a>
+      <a class="w3-bar-item w3-button animbutton " href="index.htm#extra" >Extra</a>
+      <div class="w3-display-bottomleft" style="position:absolute;">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small myBtnstyle2" href="https://www.phys.sinica.edu.tw/" target="_blank" >Institute of Physics</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small myBtnstyle2" href="http://scholar.google.com/citations?hl=en&amp;user=XPg4_ToAAAAJ" target="_blank" >Follow us on Google Scholar</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small myBtnstyle2" href="#myFooter" onclick="w3_close()" >Contact</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small myBtnstyle2" href="#" >中文/english</a>
+      </div>
+    </nav>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!--____________________________ Go top top button_________________________________-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+
+
+
+
+  <!-- Main content: shift it to the right by 300 pixels when the sidebar is visible  style="max-width:1000px"-->
+  <main class="w3-main" style="margin-left:300px">
+      <!--___________________________photos and alumni_______________________-->
+      <div class="w3-panel w3-center" style="height:150px">
+        <h1 class="w3-margin">Alumni</h1>
+      </div>
+<!--___________________________BIG photos with effect (disbled) _______________________-->
+      <!-- <div id="parallax7" class="parallax4 w3-hide-small w3-hide-medium">
+      </div> -->
+      <!-- <div id="parallax8" class="parallax5 w3-hide-small w3-hide-medium">
+      </div> -->
+
+<!-- ______________put photos here ________________________-->
+    <div class="memberflex" style="background-color:transparent">
+        <div class="membercontain">
+        </br></br>
+          <div class="w3-dropdown-hover" style="background-color: transparent;cursor: default;">
+            <h4 style="color:black;text-align:center;">林耿慧</h4>
+            <div class="imgcontainer customshadow1">
+              <div class="w3-center memberimagout">
+                <img src="alumni-groupimages/khlin.jpg" class="memberimag" style="cursor: default;" alt="News1.jpg">
+              </div>
+            </div>
+            <h6 class="w3-dropdown-content memberdesc">
+              PI <br /><i class="fa fa-envelope" aria-hidden="true"></i> khlin@phys.sinica.edu.tw <br /> kenghui@gate.sinica.edu.tw<br />
+              <i class="fa fa-phone" aria-hidden="true"></i> (02) 27896763<br />
+              Ph. D., Physics and Astronomy, University of Pennsylvania.
+            </h6>
+          </div>
+        </div>
+
+
+        <div class="membercontain">
+          </br></br>
+          <div class="w3-dropdown-hover" style="background-color: transparent;cursor: default;">
+            <h4 style="color:black;text-align:center;">Giovanni J. Paylaga</h4>
+            <div class="imgcontainer customshadow1">
+              <div class="w3-center memberimagout">
+                <img src="alumni-groupimages/KH_Children1.jpg" class="memberimag" style="cursor: default;" alt="News1.jpg">
+              </div>
+            </div>
+            <h6 class="w3-dropdown-content memberdesc">
+              Ph.D. Student<br/>Sept. 2015 - Current<br/>
+              <i class="fa fa-envelope" aria-hidden="true"></i> gpaylaga@gmail.com<br/>
+              M.S. Physics, Mindanao State University - IIigan Institute of Technology<br/>
+              Research topic: Traction force patterns of the mesenchymal stem cells in a spherical microwell
+            </h6>
+          </div>
+        </div>
+
+        <div class="membercontain">
+          </br></br>
+          <div class="w3-dropdown-hover w3-center" style="background-color: transparent;cursor: default;">
+            <h4 style="color:black;text-align:center;">Marco P. de Leon</h4>
+            <div class="imgcontainer customshadow1">
+              <div class="w3-center memberimagout">
+                <img src="alumni-groupimages/KH_Children2.jpg" class="memberimag" alt="News1.jpg">
+              </div>
+            </div>
+            <h6 class="w3-dropdown-content memberdesc">
+            Collaborative PhD student<br/>
+            Sep. 2016 - current <br/>
+            <i class="fa fa-envelope" aria-hidden="true"></i> marcopdeleon@gate.sinica.edu.tw<br/>
+            M.S. Physics, Mindanao State University - IIigan Institute of Technology<br/>
+            Research topic: Mechanical wave in amputated tailfin of zebrafish
+            </h6>
+          </div>
+        </div>
+
+        <div class="membercontain">
+          </br></br>
+          <div class="w3-dropdown-hover w3-center" style="background-color: transparent;cursor: default;">
+            <h4 style="color:black;text-align:center;">呂佳軒</h4>
+            <div class="imgcontainer customshadow1">
+              <div class="w3-center memberimagout">
+                <img src="alumni-groupimages/Show-shine2(1).jpg" class="memberimag" alt="News1.jpg">
+              </div>
+            </div>
+            <h6 class="w3-dropdown-content memberdesc">
+              Yo I am here. NTU physics undergrad, July 2018-Current<br />
+            </h6>
+          </div>
+        </div>
+      </div>
+
+    <!-- Quick navigation buttons -->
+    <div class="customunderline2 floatingbutton">
+      <strong>Quick link</strong>
+      <br/>
+    <ul style="list-style-type: none; padding-left:20px;padding-right:20px;">
+      <li><a href="#collaborators"><button class="simplebutton2 myBtnstyle">
+        Collaborators (Past and Present)
+      </button></a></li>
+      <li><a href="#postdoc"><button class="simplebutton2 myBtnstyle">
+        Postdoctoral Researchers
+      </button></a></li>
+      <li><a href="#master"><button class="simplebutton2 myBtnstyle">
+        Master students
+      </button></a></li>
+      <li><a href="#ra"><button class="simplebutton2 myBtnstyle">
+        Research Assistants
+      </button></a></li>
+      <li><a href="#sintern"><button class="simplebutton2 myBtnstyle">
+        Summer Interns
+      </button></a></li>
+      <li><a href="#intern"><button class="simplebutton2 myBtnstyle">
+        Interns
+      </button></a></li>
+    </ul>
+  </div>
+<!--_______________________________________________ big list __________________________________________-->
+    <div id="collaborators" class="w3-panel w3-center">
+      <h1  class="w3-margin">Collaborators (Past and Present)</h1>
+    </div>
+    <div class="w3-padding-large">
+
+      <h4><span><strong>Biological Sciences</strong></span></h4>
+      <p><a href="http://my2.tmu.edu.tw/blog.php?user=humwang&amp;f=portfolio">王仰高 Yang-Kao Wang</a>, Institute of Biomedical Materials and Tissue Engineering, Taipei Medical University</p>
+      <p>李光申 Kuang-Sheng Lee, Institute of Clinical Medicine, National Yang-Ming University; Deputy Dean, Office of International Affairs, National Yang-Ming University</p>
+      <p><a href="http://www.mc.ntu.edu.tw/department/pharmacology/template/main/Thai-Yen%20Ling/PAGE01.HTM">林泰元 Thai-Yen Ling</a>,&nbsp; Department of Pharmacology, National Taiwan University, Taipei, Taiwan</p>
+      <p>郭津岑 Kuo, Jean-Cheng, Institute of Biochemistry and Molecular Biology, National Yang Ming University</p>
+      <p>W James Nelson, Biology / Molecular and Cellular Physiology, Stanford University, California, USA.</p>
+      <p><a href="http://departments.agri.huji.ac.il/plantscience/people/Oded_Shoseyov/">Oded Shoseyov</a>, The Hebrew University of Jerusalem, Robert H.Smith Faculty of Agriculture, Food and Environment, Israel</p>
+
+
+
+      <h4><span><strong>Physical Sciences</strong></span></h4>
+      <p><a href="http://crocker.seas.upenn.edu/">John C. Crocker</a>, Department of Chemical and Biomolecular Engineering, University of Pennsylvania, Philadelphia, Pennsylvania, USA</p>
+      <p><a href="https://www.physics.harvard.edu/people/facpages/weitz">David A. Weitz</a>, Physics and Applied Physics, Harvard University</p>
+      <p><a href="https://psc.tamu.edu/people/former-visiting-scholars/">Zhengdong Cheng</a>,&nbsp; Departmant of Chemical Engineering, Texas A&amp;M University</p>
+      <p><a href="http://cohengroup.ccmr.cornell.edu/index.php">Itai Cohen</a>, Dept. of Physics, Cornell University, Ithaca, New York, USA</p>
+      <p><a href="http://www.phys.sinica.edu.tw/directory_user1.php?id_key=94">胡恩德 Hwu,En-Te</a>,&nbsp; Institute of Physics, Academia Sinica</p>
+      <p><a href="http://sites.google.com/site/jiayang/">莊嘉揚 Jia-Yang Juang</a>,&nbsp; Department of Mechanical Engineering, National Taiwan University</p>
+      <p><a href="http://www.rcas.sinica.edu.tw/~clee/index.html">李超煌 Chau-Hwang Lee</a>, Research Center for Applied Sciences, Academia Sinica</p>
+      <p><a href="http://www.ee.ntu.edu.tw/profile?id=762">郭柏齡 Po-Ling Kuo</a>, Department of Electrical Engineering, National Taiwan University</p>
+      <p><a href="http://phy.ntnu.edu.tw/~jrhuang/">黃仲仁 Jung-Ren Huang</a>, Assistant Professor, Department of Physics, National Taiwan Normal University</p>
+      <p><a href="http://web.che.ntu.edu.tw/bmte/home">游佳欣 Jiashing Yu</a>, Department of Chemical Engineering, National Taiwan University</p>
+      <p><a href="http://www.ee.nthu.edu.tw/ytyang/ytyang/Principal_Investigator.html">楊雅棠 Ya-Tang Yang</a>, Assistant Professor ,Department of Electrical Engineering &amp; Institute of Electronic Engineering, National Tsing Hua University</p>
+      <p><a href="http://www.rcas.sinica.edu.tw/faculty/jycheng.html">鄭郅言 Ji-Yen Cheng</a>, Associate Research Fellow, Research Center for Applied Sciences, Academia Sinica</p>
+      <p><a href="http://www.me.nctu.edu.tw/people/bio.php?PID=151">鄭文雅 Wen-Yea Jang</a>, Associate Professor, Department of Mechanical Engineering, National Chiao Tung University</p>
+      <p><a href="http://confluence.cornell.edu/display/BIOMEGRP/Gao+Research+Group">YingXin Gao</a>, Professor, Sibley School of Mechanical and Aperospace Engineering, Cornell University</p>
+      <p><a href="http://www.agri.huji.ac.il/~braslavs/">Ido Braslavsky</a>, Dr., Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem</p>
+    </div>
+
+    <div id="postdoc" class="w3-panel w3-center">
+    <h1 class="w3-margin">Postdoctoral Researchers</h1>
+    </div>
+    <div class="w3-container w3-padding-64">
+    <table class="w3-table" style="width:100%;font-size:16px;">
+                  <tr>
+                      <th width="250"><span style="font-size: larger">Name</span></th>
+                      <th width="250"><span style="font-size: larger">Contact</span></th>
+                      <th><span style="font-size: larger">Information</span></th>
+                  </tr>
+                  <tr>
+                      <td>鍾國元 (Kuo-Yuan Chung)</td>
+                      <td>kxc64@phys.sinica.edu.tw
+                      </td>
+                      <td>PhD. Chemical Engineering, Case Western University, Jan 2007- May 2009, After:正修科技大學助理教授</td>
+                  </tr>
+                  <tr>
+                      <td>米彥 (Narayan Mishra)</td>
+                      <td>
+                      <div>mishrawise@gmail.com</div>
+                      </td>
+                      <td>PhD. Max Planck Institute, Currently professor, Dept. of Paper Technology, Indian Institute of Technology at Roorkee</td>
+                  </tr>
+                  <tr>
+                      <td><span>李怡萱 (Yi-hsuan Lee)</span></td>
+                      <td>
+                      <div>leey@phys.sinica.edu.tw</div>
+                      </td>
+                      <td>Ph. D., Chemistry, National Tsing Hua University.</td>
+                  </tr>
+                  <tr>
+                      <td>曾慶宗</td>
+                      <td>qztseng@gmail.com</td>
+                      <td>柏登生醫董事長特助
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>黃政廣 (Cheng-kuan Huang)</td>
+                      <td>huang.ck01@gmail.com</td>
+                      <td>Ph. D., Jan. 2016 - Nov. 2018</td>
+                  </tr>
+                  <tr>
+                      <td>Bhupana Jagannatham Naidu</td>
+                      <td>naiduccmb@gmail.com</td>
+                      <td>Ph. D. Sept. 2020 - Jan. 2021</td>
+                  </tr>
+                  <tr>
+                      <td>溫福來 (Fu-Lai Wen)</td>
+                      <td>joe70136@gmail.com</td>
+                      <td>Ph. D., Nov. 2018, Aug. 2021, After: 成大傷口修復中心助理研究員</td>
+                  </tr>
+          </table>
+        </div>
+          <div id="master" class="w3-panel w3-center">
+            <h1 class="w3-margin">Master students</h1>
+          </div>
+          <div class="w3-container w3-padding-64">
+          <table class="w3-table" style="width:100%;font-size:16px">
+                  <tr>
+                      <th width="250"><span style="font-size: large">Name</span></th>
+                      <th width="250"><span style="font-size: large">Contact</span></th>
+                      <th><span style="font-size: larger">Information</span></th>
+                  </tr>
+                  <tr>
+                      <td>賴亮杰(Liang-jie Lai)</td>
+                      <td>ljlai@phys.sinica.edu.tw
+                      </td>
+                      <td>師大物理畢/中大物理所, Aug 2005 - July 2007, 現為台積電工程師</td>
+                  </tr>
+                  <tr>
+                      <td>薛京(Ching Hsueh)</td>
+                      <td>shei@phys.ncu.edu.tw</td>
+                      <td>中央大學物理畢/中大物理所, Aug. 2005 - Jun 2008, After: PhD. at Paris 6th University/現在台積電研發</td>
+                  </tr>
+                  <tr>
+                      <td>林亞頡(Ya-Jie Lin)</td>
+                      <td>ajay_1031@yahoo.com.tw</td>
+                      <td>宜蘭大學電機系畢/中大生物物理所,July 2007-Oct. 2009, 現為聯電工程師</td>
+                  </tr>
+                  <tr>
+                      <td>林靜英(Jing-Ying Lin)</td>
+                      <td>sida323@gmail.com</td>
+                      <td>屏東教育大學生命科學系畢/中大生物物理所, Jul 2008 - Sep. 2010, 現在金車品管</td>
+                  </tr>
+                  <tr>
+                      <td>劉彥良(Yan-Liang Lau)</td>
+                      <td>pop909pop909@msn.com</td>
+                      <td>台大生命科學系畢/台大醫工所, July 2007 - Aug 2010, PhD at UT-Austin, Bioengineering</td>
+                  </tr>
+                  <tr>
+                      <td>洪瑋嶸(Wei-Rong Hong)</td>
+                      <td>b93202022@ntu.edu.tw</td>
+                      <td>台大物理畢/台大物理所, July 2008 - Oct. 2010, After:宏達電工程師</td>
+                  </tr>
+                  <tr>
+                      <td>林宛瑢(Wan-jung Lin)</td>
+                      <td>wanjung.lin@gmail.com</td>
+                      <td>台大物理畢/台大物理所, Sep. 2009 - Aug. 2011, After: 加樂生技工程師</td>
+                  </tr>
+                  <tr>
+                      <td>王威庭(Wei-Ting Wang)</td>
+                      <td>suyakiwang@gmail.com</td>
+                      <td>輔大物理畢/中大生物物理所, Jan. 2009 - Jan. 2012, </td>
+                  </tr>
+                  <tr>
+                      <td>黃麒安(Chi-an Huang)</td>
+                      <td>chyian30@hotmail.com</td>
+                      <td>彰化師範大學物理系畢/陽明生醫光電所, Jan,2011-Feb. 2013 </td>
+                  </tr>
+                  <tr>
+                      <td>武立凡 (Li-fan Wu)</td>
+                      <td>buleehom@hotmail.com</td>
+                      <td>陽明醫技系畢/陽明微免所, Oct. 2010 - Feb. 2013, After/Current: 實驗室助理</td>
+                  </tr>
+                  <tr>
+                      <td>王筑萱 (Chu-hsuan Wang)</td>
+                      <td>chloewang47@gmail.com</td>
+                      <td>中大生物物理所, Jul. 2011 - Jun. 2014, 東海大學物理系畢
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>李虹慧(Hung-Huei Lee)</td>
+                      <td>r02522507@ntu.edu.tw</td>
+                      <td>台灣大學機械系畢/台灣大學機械所, Jul.,2013-Feb. 2015 </td>
+                  </tr>
+                  <tr>
+                      <td>莊詠竣(Yong-Jun Zhuang)</td>
+                      <td>jimjhuang27@gmail.com</td>
+                      <td>中興大學機械系畢/交通大學機械所, Jul.,2013-Jul. 2015 </td>
+                  </tr>
+          </table>
+        </div>
+          <div id="ra" class="w3-panel w3-center">
+            <h1 class="w3-margin">Research Assistants</h1>
+          </div>
+
+          <div class="w3-container w3-padding-64">
+          <table class="w3-table" style="width:100%;font-size:16px">
+
+                  <tr>
+                      <th width="250"><span style="font-size: large">Name</span></th>
+                      <th width="250"><span style="font-size: large">Contact</span></th>
+                      <th><span style="font-size: large">Information</span></th>
+                  </tr>
+                  <tr>
+                      <td>孫文瑜(Win-yu Sun)</td>
+                      <td></td>
+                      <td>2005-2006 輔大物理學士/台大物理碩士畢</td>
+                  </tr>
+                  <tr>
+                      <td>田安庭(An-ting Tien)</td>
+                      <td></td>
+                      <td>2005-2006, Current: Engineer at Tai-power</td>
+                  </tr>
+                  <tr>
+                      <td>陳穩旭(Wuen-shiu Chen)</td>
+                      <td></td>
+                      <td>2006-2008,台大物理學士/台大物理碩士 After: PhD in Rice </td>
+                  </tr>
+                  <tr>
+                      <td>郭搢臣(Chin-chen Kuo)</td>
+                      <td>kanjanson925@gmail.com</td>
+                      <td>2006 - 2007, 成大航太, After: UPenn Material Science master program</td>
+                  </tr>
+                  <tr>
+                      <td>張子奕(Albert Chang)</td>
+                      <td>albertchang.bme@gmail.com</td>
+                      <td>2006 - 2008, Physics, U. of Texas at Austin, Current: Taiwan Liposome Company</td>
+                  </tr>
+                  <tr>
+                      <td>陳孝昭(Hsiao-chao Chen)</td>
+                      <td>hcchen@phys.sincia.edu.tw</td>
+                      <td>2007 - 2009, 海洋大學微生物所碩士, After: 複雜系統組秘書</td>
+                  </tr>
+                  <tr>
+                      <td>張智為(Zhi-wei Chang)</td>
+                      <td>cwchang@phys.sinica.edu.tw</td>
+                      <td>2008- 2009, 台大材料學士, After: U. Maryland, Bioengineering master student</td>
+                  </tr>
+                  <tr>
+                      <td>簡冠廷(Guan-ting Chien)</td>
+                      <td>timdream@gmail.com</td>
+                      <td>2008 - 2009, 中大物理學士, Current: Cite Publishers</td>
+                  </tr>
+                  <tr>
+                      <td>洪維君(Wei-chun Hung)</td>
+                      <td>b93202056@ntu.edu.tw</td>
+                      <td>Oct. 2009- Aug. 2010 , 台大物理學士, After: Master at Stanford Mechanical Engineer, Currently 蘋果工程師
+
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>朱芳儀 (Fang-Yi Chu)</td>
+                      <td>jc3352405@gmail.com</td>
+                      <td>
+                      <div>B.S., Biochemical Science and Technology, National Taiwan University. Feb.2012-July 2013 After/Current: NYU Physics PhD student
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>陳琬蓉(Wan-Jung Chen)</td>
+                      <td>alice00656@gmail.com</td>
+                      <td>
+                      M.S., Physiology, National Cheng Kung University. Mar.2014-Dec. 2014
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>吳昭儀 (Jau-Yi Wu)</td>
+                      <td>sally82876756@gmail.com</td>
+                      <td>
+                      M.S., Bioengineering, National Chung Hsin University. Aug.2013-Feb. 2015
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>蘇嵩智 (Sung-Chih Su)</td>
+                      <td>bladesu0526@gmail.com</td>
+                      <td>
+                        M.S., Physics, National Central University. Apr.2014-Mar. 2015
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>郭郁潔 (Yu-Chieh Kuo)</td>
+                      <td>joyce820327@gmail.com</td>
+                      <td>
+                      B.S., Electrophysics, National Chiao Tung University. Jul.2015-Jun. 2016
+                      </td>
+                  </tr>
+          </table>
+        </div>
+          <div id="sintern" class="w3-panel w3-center">
+            <h1 class="w3-margin">Summer Interns</h1>
+          </div>
+          <div class="w3-container w3-padding-64"></div>
+          <table class="w3-table" style="width:100%;font-size:16px">
+                  <tr>
+                      <th width="250"><span style="font-size: large">Name</span></th>
+                      <th width="250"><span style="font-size: large">Contact</span></th>
+                      <th><span style="font-size: larger">Information</span></th>
+                  </tr>
+                  <tr>
+                      <td>Shama Iyer</td>
+                      <td>shama.r.iyer@gmail.com</td>
+                      <td>Cornell ME PhD student</td>
+                  </tr>
+                  <tr>
+                      <td>陳宛(Vicky Chen)</td>
+                      <td></td>
+                      <td>Taiwan Tech Track</td>
+                  </tr>
+                  <tr>
+                      <td>高章瑋(Jang-Woei David Kao)</td>
+                      <td></td>
+                      <td>Taiwan Tech Track
+                      </td>
+                  </tr>
+          </table>
+        </div>
+          <div id="intern" class="w3-panel w3-center">
+            <h1 class="w3-margin">Interns</h1>
+          </div>
+
+          <div class="w3-container w3-padding-64">
+          <table class="w3-table" style="width:100%;font-size:16px">
+
+                  <tr>
+                      <th width="200"><span style="font-size: larger">Name</span></th>
+                      <th width="250"><span style="font-size: larger">Contact</span></th>
+                      <th><span style="font-size: larger">Information</span></th>
+                  </tr>
+                  <tr>
+                      <td>陳巧倫</td>
+                      <td></td>
+                      <td>清華生命科學畢</td>
+                  </tr>
+                  <tr>
+                      <td>潘均宏(Chun-hung Pan)</td>
+                      <td>smallz.ece93g@nctu.edu.tw</td>
+                      <td>交大資工畢</td>
+                  </tr>
+                  <tr>
+                      <td>蘇亮宇(Liang-yu Su)</td>
+                      <td>kepler_z@yahoo.com.tw</td>
+                      <td>大學部學生, 台大光電博士班學生</td>
+                  </tr>
+                  <tr>
+                      <td>陳宛</td>
+                      <td></td>
+                      <td>候鳥計畫暑期生</td>
+                  </tr>
+                  <tr>
+                      <td>高章瑋(Jang-Woei David Kao)</td>
+                      <td></td>
+                      <td>候鳥計畫暑期生</td>
+                  </tr>
+                  <tr>
+                      <td>吳淑君(Shu-Chun Wu)</td>
+                      <td>ownfavoritething@yahoo.com.tw</td>
+                      <td>中大物理系</td>
+                  </tr>
+                  <tr>
+                      <td>李蕊竹(Rui-Chu Lee)</td>
+                      <td>cio926@yahoo.com.tw</td>
+                      <td>台大物理系</td>
+                  </tr>
+                  <tr>
+                      <td>王新驊(Xin-Hua Wang)</td>
+                      <td>hankylegk@gmail.com</td>
+                      <td>台大物理系, After: 台大光電所</td>
+                  </tr>
+                  <tr>
+                      <td>曾蕙敏(Hui-Min Zeng)</td>
+                      <td>b96b01009@ntu.edu.tw</td>
+                      <td>台大生科</td>
+                  </tr>
+                  <tr>
+                      <td>Anurach Poloek (Nott)</td>
+                      <td>anurach_p@hotmail.com</td>
+                      <td>TIGP Chemistry</td>
+                  </tr>
+                  <tr>
+                      <td>黃品嘉(Pin-Jia Huang)</td>
+                      <td>b96b01067@ntu.edu.tw</td>
+                      <td>台大生科</td>
+                  </tr>
+                  <tr>
+                      <td>張晏溥(Yan-Pu Zhang)</td>
+                      <td>yenpu_roof@homtmail.com</td>
+                      <td>台大物理系, Current: 台大生化所碩士班</td>
+                  </tr>
+                  <tr>
+                      <td>陳瓊怡(Chiung-Yi Chen)</td>
+                      <td>b96209005@ntu.edu.tw</td>
+                      <td>台大大氣系</td>
+                  </tr>
+                  <tr>
+                      <td>張菀馨(Wan-Xin Zhang)</td>
+                      <td>bonnie80399@gmail.com></td>
+                      <td>清大物理所></td>
+                  </tr>
+                  <tr>
+                      <td>魏銘良(Ming-Liang Wei)</td>
+                      <td>b89205102@gmail.com</td>
+                      <td>台大動物雙修物理畢</td>
+                  </tr>
+                  <tr>
+                      <td>林柏瑋(Bo-Wei Lin)</td>
+                      <td>summersnow32426@hotmail.com</td>
+                      <td>台灣大學動物學研究所畢, Current an engineer at Samsung</td>
+                  </tr>
+                  <tr>
+                      <td>魏維劭(Wei-Shao Wei)</td>
+                      <td>weishao721@gmail.com</td>
+                      <td>台大物理系, After/Current: PhD student at UPenn Physics</td>
+                  </tr>
+                  <tr>
+                      <td>Bishnubrata Patra</td>
+                      <td>bishnubrata.patra@gmail.com</td>
+                      <td>Yang Ming University, Biophotonics Insitutute, PhD</td>
+                  </tr>
+                  <tr>
+                      <td>楊佩良(Pei-Liang Yang)</td>
+                      <td>b95501054@ntu.edu.tw</td>
+                      <td>台大工科系畢, Current: PhD student at Georgia Tech Mechanical Engineer</td>
+                  </tr>
+                  <tr>
+                      <td>甯祥豪(Xiang-Hao Ning)</td>
+                      <td>johnjohning@yahoo.com.tw</td>
+                      <td>台大物理系畢</td>
+                  </tr>
+                  <tr>
+                      <td>鐘孟庭(Meng-Ting Zhong)</td>
+                      <td>b96202038@ntu.edu.tw</td>
+                      <td>台大物理系, Current: USC BioE Master student</td>
+                  </tr>
+                  <tr>
+                      <td>梅振群(Chen-Chun Mei)</td>
+                      <td>r00524037@ntu.edu.tw</td>
+                      <td>台大化工所</td>
+                  </tr>
+                  <tr>
+                      <td>吳柏辰(Po-Chen Wu)</td>
+                      <td>b96504112@ntu.edu.tw</td>
+                      <td>台大化工所</td>
+                  </tr>
+                  <tr>
+                      <td>邱柏瑞(Po-Jui Chiu)</td>
+                      <td>b97504013@ntu.edu.tw</td>
+                      <td>台灣大學化工系</td>
+                  </tr>
+                  <tr>
+                      <td>呂建穎(Chien-Ying Lu)</td>
+                      <td>sddapp@Gmail.com</td>
+                      <td>中央大學生物物理所</td>
+                  </tr>
+                  <tr>
+                      <td>林文翌(Wen-Yi Lin)</td>
+                      <td>wis80121@gmail.com</td>
+                      <td>清華大學材料所</td>
+                  </tr>
+                  <tr>
+                      <td>陳百麒(Pai-Chi Chen)</td>
+                      <td>imush.fit@gmail.com</td>
+                      <td>台灣師範大學物理系</td>
+                  </tr>
+                  <tr>
+                      <td>劉庭妤(Ting-Yu Liu)</td>
+                      <td>tyliu@phys.sinica.edu.tw</td>
+                      <td>中興大學獸醫系畢</td>
+                  </tr>
+                  <tr>
+                      <td>吳孟恬(Meng-Tien Wu)</td>
+                      <td>dudu0623@phys.sinica.edu.tw</td>
+                      <td>助理</td>
+                  </tr>
+                  <tr>
+                      <td>程廣晴(Kuang-Ching Cheng)</td>
+                      <td>b00502112@ntu.edu.tw</td>
+                      <td>台灣大學機械系畢</td>
+                  </tr>
+          </table>
+        </div>
+    <footer id="myFooter">
+      <div class="w3-container w3-padding-32" style="background-color:rgb(29, 34, 39)">
+        <h5 class="myfooter"><i class="fa fa-address-book" aria-hidden="true"></i>&emsp;中央研究院物理研究所 Institute of Physics, Academia Sinica</h5>
+        <h5 class="myfooter"><i class="fa fa-map-marker" aria-hidden="true"></i>&emsp;台北市115南港區研究院路二段128號 No. 128, Sec. 2, Academia Rd., Nangang Dist., Taipei City 115201, Taiwan (R.O.C.)</h5>
+        <h5 class="myfooter"><i class="fa fa-phone" aria-hidden="true"></i></i>&emsp;Tel:886-2-2788-0058 </h5>
+        <h5 class="myfooter"></i><i class="fa fa-fax" aria-hidden="true"></i>&emsp;/ Fax:886-2-2783-4187 *管理區*</h5>
+      </div>
+      <div class="w3-container w3-theme-l1">
+        <h6>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" style="background-color:transparent">w3.css</a>, designed by Yu-Jung Studio</h6>
+      </div>
+    </footer>
+
+<!-- END MAIN -->
+  </main>
+<!-- _______other infos______-->
+<!-- <section></section> -->
+
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+<!-- jQuery library -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+
+<!-- Latest compiled JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+<!-- Latest compiled and minified CSS -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+<!-- Latest compiled JavaScript -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="effect-min.js"></script>
+</html>

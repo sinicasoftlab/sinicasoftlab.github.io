@@ -43,13 +43,14 @@ function w3_close() {
 // }
 
 
-// loading screen
+// loading screen loader.style.display = 'none'
 // check if page is loaded 
-//if(document.readyState === "complete") {
-  // make loading screen go away
-  // document.getElementById('loading').style.display = none;
-//}
+var loader = document.getElementById('loading');
 
+window.addEventListener ("load", function() {
+  setTimeout(function(){loader.className = 'fadeout'}, 100);
+  clearTimeout()
+});
 
 // Get the button:
 let mybutton = document.getElementById("myBtn");
@@ -724,27 +725,36 @@ document.addEventListener("DOMContentLoaded", function () {
 // ____________________________create parallax effect  https://codepen.io/cgrkzlkn/pen/yLjzPmp
 const parallax = document.getElementById("parallax1");
 const parallax2 = document.getElementById("parallax2");
+const parallax3 = document.getElementById("parallax6");
+// const parallax4 = document.getElementById("parallax7");
+
 let s_width = window.innerWidth;
 // Parallax Effect for DIV 1
 window.addEventListener("scroll", function () {
   let offset = window.pageYOffset;
   const rect = parallax.getBoundingClientRect();
   const rect2 = parallax2.getBoundingClientRect();
-
+  const rect3 = parallax3.getBoundingClientRect();
+  // const rect4 = parallax4.getBoundingClientRect();
 
 
   // const x = rect.left + window.scrollX;
   const y = rect.top + window.scrollY;
   const y2 = rect2.top + window.scrollY;
+  const y3 = rect3.top + window.scrollY;
+  // const y4 = rect4.top + window.scrollY;
 
-
-  parallax.style.backgroundPositionY = (offset-y)*0.5+ "px";
+  parallax.style.backgroundPositionX = (offset-y)*0.2 - 100 + "px";
   parallax2.style.backgroundPositionY = (offset-y2) * 0.7 + "px";
+  parallax3.style.backgroundPositionY = (offset-y3) * 0.5 - 400 + "px";
+  // parallax4.style.backgroundPositionY = (offset-y4) * 0.7 + "px";
   // DIV 1 background will move slower than other elements on scroll.
 });
 /* add artificial scroll when loading page */
 window.dispatchEvent(new CustomEvent('scroll'))
 
+
+/* _____________________ debug ___________________ */
 const button = document.getElementById("show-position");
 const output = document.getElementById("output"); // checker
 const displayPosition = () => {
@@ -767,4 +777,29 @@ const displayPosition = () => {
 // button.addEventListener("click", displayPosition);
 
 // Add an event listener to the window to call displayPosition on resize
-window.addEventListener("resize", displayPosition);
+// window.addEventListener("resize", displayPosition);
+
+// fun part
+var count = 0;
+var funpart = document.getElementById("funpart");
+let text = document.getElementById("funpart").innerHTML;
+funpart.addEventListener("click", function() {
+    count++;
+
+    if (count == 10) {
+      funpart.style.color = "blue";
+    } 
+    if (count == 20) {
+      funpart.style.color = "red";
+    } 
+    if (count == 40) {
+      var a = document.createElement('a');
+      var linkText = document.createTextNode("Yu-Jung Studio");
+      a.appendChild(linkText);
+      a.title = "You got rickrolled";
+      a.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+
+      funpart.parentNode.replaceChild(a, funpart);
+    }
+});
+//https://www.youtube.com/watch?v=dQw4w9WgXcQ
