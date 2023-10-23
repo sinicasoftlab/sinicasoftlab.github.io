@@ -657,7 +657,7 @@ if(event.target == p36) {
 // }
 // ____________________ memberimage animation border
 // let elementsArray = document.getElementsByClassName(name)
-
+window.dispatchEvent(new CustomEvent('scroll'))
 // ____________________ fade in upon scrolling into view
 let elementsArray = document.querySelectorAll(".tile");
 // console.log(elementsArray);
@@ -723,7 +723,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ____________________________create parallax effect  https://codepen.io/cgrkzlkn/pen/yLjzPmp
-const parallax = document.getElementById("parallax1");
+// const parallax = document.getElementById("parallax1");
 const parallax2 = document.getElementById("parallax2");
 const parallax3 = document.getElementById("parallax6");
 // const parallax4 = document.getElementById("parallax7");
@@ -732,19 +732,19 @@ let s_width = window.innerWidth;
 // Parallax Effect for DIV 1
 window.addEventListener("scroll", function () {
   let offset = window.pageYOffset;
-  const rect = parallax.getBoundingClientRect();
+  // const rect = parallax.getBoundingClientRect();
   const rect2 = parallax2.getBoundingClientRect();
   const rect3 = parallax3.getBoundingClientRect();
   // const rect4 = parallax4.getBoundingClientRect();
 
 
   // const x = rect.left + window.scrollX;
-  const y = rect.top + window.scrollY;
+  // const y = rect.top + window.scrollY;
   const y2 = rect2.top + window.scrollY;
   const y3 = rect3.top + window.scrollY;
   // const y4 = rect4.top + window.scrollY;
 
-  parallax.style.backgroundPositionX = (offset-y)*0.2 - 100 + "px";
+  // parallax.style.backgroundPositionX = (offset-y)*0.2 - 100 + "px";
   parallax2.style.backgroundPositionY = (offset-y2) * 0.7 + "px";
   parallax3.style.backgroundPositionY = (offset-y3) * 0.5 - 400 + "px";
   // parallax4.style.backgroundPositionY = (offset-y4) * 0.7 + "px";
