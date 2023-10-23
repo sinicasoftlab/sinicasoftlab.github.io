@@ -61,7 +61,22 @@
     <!--____________________________ Go top top button_________________________________-->
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 
-
+    <!-- Quick navigation buttons -->
+    <div class="customunderline2 floatingbutton" style="z-index:99;">
+      <strong>Quick link</strong>
+      <br/>
+        <ul style="list-style-type: none; padding-left:20px;padding-right:20px;">
+          <li><a href="#facility"><button class="simplebutton2 myBtnstyle">
+            Facility
+          </button></a></li>
+          <li><a href="#gallery"><button class="simplebutton2 myBtnstyle">
+            Gallery
+          </button></a></li>
+          <li><a href="#outing"><button class="simplebutton2 myBtnstyle">
+            Lab Outing Photo
+          </button></a></li>
+        </ul>
+    </div>
 
   <!-- Main content: shift it to the right by 300 pixels when the sidebar is visible  style="max-width:1000px"-->
   <main class="w3-main" style="margin-left:300px">
@@ -70,6 +85,7 @@
 <!--____________________________ README: Editing this part is tricky involving css and javascript _________________________ -->
 <!--_____________________________call me (Yujung) if you need help ________________________________________________________ -->
       <div class="w3-panel w3-center" id="facility">
+      </br>
         <h1 class="w3-margin">Facility</h1>
       </div>
 <!-- __________________________Microscope Room________________________________ -->
@@ -428,7 +444,8 @@
 
 
 <!-- __________________________Gallery______________________________________________ -->
-  <div class="w3-panel w3-center">
+  <div id="gallery" class="w3-panel w3-center">
+    </br>
     <h1 class="w3-margin" id="gallery">Gallery</h1>
   </div>
 
@@ -578,8 +595,9 @@
 
 
 <!-- __________________________Lab outing photos________________________________ -->
-<div id="labphoto" class="w3-panel w3-center">
-  <h3 class="w3-margin">Lab Outing Photo</h3>
+<div id="outing" class="w3-panel w3-center">
+  </br>
+  <h1 class="w3-margin">Lab Outing Photo</h1>
   <h5>We enjoy fun in life as much as we enjoy fun in research. Here are some pictures to share.</h5>
 </div>
 
