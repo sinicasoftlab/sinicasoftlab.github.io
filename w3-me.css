@@ -1213,7 +1213,7 @@ button:disabled:hover {
     height:8192px;
     min-width:1440px;
     background-position: center;
-    background-repeat:repeat-y;
+    background-repeat:repeat;
     animation: mymove2 6s linear infinite;
     z-index:99;
 }
