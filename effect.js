@@ -746,7 +746,7 @@ window.addEventListener("scroll", function () {
 
   // parallax.style.backgroundPositionX = (offset-y)*0.2 - 100 + "px";
   parallax2.style.backgroundPositionY = (offset-y2) * 0.7 + "px";
-  parallax3.style.backgroundPositionY = (offset-y3) * 0.5 - 400 + "px";
+  parallax3.style.backgroundPositionY = (offset-y3) * 0.7 - 700 + "px";
   // parallax4.style.backgroundPositionY = (offset-y4) * 0.7 + "px";
   // DIV 1 background will move slower than other elements on scroll.
 });
@@ -798,7 +798,6 @@ funpart.addEventListener("click", function() {
       a.appendChild(linkText);
       a.title = "You got rickrolled";
       a.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-
       funpart.parentNode.replaceChild(a, funpart);
     }
 });
