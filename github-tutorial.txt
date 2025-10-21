@@ -1,0 +1,23 @@
+--------- web browser -------------
+install git
+--> https://git-scm.com/install/windows
+login and go to your GitHub "repository"
+
+--------- local machine -------------
+create a folder to sync with the Github
+open terminal / powershell
+go to this folder by typing (example)
+---> cd "C:\Users\USER\Desktop\sinicasoftlab.github.io-main"
+
+--------- web browser -------------
+on your GitHub "repository"
+push the green button [code] and copy the website line below
+(our website)--> https://github.com/sinicasoftlab/sinicasoftlab.github.io.git
+to start download the old website, type
+(our website)--> git clone https://github.com/sinicasoftlab/sinicasoftlab.github.io.git
+
+--------- local machine -------------
+now you can update the content locally, add images, change text etc...
+
+
+

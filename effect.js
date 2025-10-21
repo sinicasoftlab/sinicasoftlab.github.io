@@ -780,25 +780,25 @@ const displayPosition = () => {
 // window.addEventListener("resize", displayPosition);
 
 // fun part
-var count = 0;
-var funpart = document.getElementById("funpart");
-let text = document.getElementById("funpart").innerHTML;
-funpart.addEventListener("click", function() {
-    count++;
+// var count = 0;
+// var funpart = document.getElementById("funpart");
+// let text = document.getElementById("funpart").innerHTML;
+// funpart.addEventListener("click", function() {
+//     count++;
 
-    if (count == 10) {
-      funpart.style.color = "blue";
-    } 
-    if (count == 20) {
-      funpart.style.color = "red";
-    } 
-    if (count == 40) {
-      var a = document.createElement('a');
-      var linkText = document.createTextNode("Yu-Jung Studio");
-      a.appendChild(linkText);
-      a.title = "You got rickrolled";
-      a.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-      funpart.parentNode.replaceChild(a, funpart);
-    }
-});
-//https://www.youtube.com/watch?v=dQw4w9WgXcQ
+//     if (count == 10) {
+//       funpart.style.color = "blue";
+//     } 
+//     if (count == 20) {
+//       funpart.style.color = "red";
+//     } 
+//     if (count == 40) {
+//       var a = document.createElement('a');
+//       var linkText = document.createTextNode("Yu-Jung Studio");
+//       a.appendChild(linkText);
+//       a.title = "You got rickrolled";
+//       a.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+//       funpart.parentNode.replaceChild(a, funpart);
+//     }
+// });
+// //https://www.youtube.com/watch?v=dQw4w9WgXcQ
