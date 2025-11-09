@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3-me.css">
+    <link rel="icon" type="image/png" href="images/favicon2.png">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css"> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-brown.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Extra - KH Lin's Lab 2023</title>
+</head>
+<body>
+    <!-- ____________________________ Loader ____________________________ -->
+  <div id="loading"><span class="loader"></span></div>
+
+    <!--____________________________ Navigation bar (mobile)_________________________________-->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme-l3 w3-top w3-left-align w3-medium">
+        <a class="w3-bar-item w3-button w3-left w3-hide-large w3-large w3-theme-l1 w3-hover-white" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a class="w3-bar-item w3-button w3-right w3-hide-large myBtnstyle2" href="http://scholar.google.com/citations?hl=en&amp;user=XPg4_ToAAAAJ" target="_blank" >Google Scholar</a>
+        <a class="w3-bar-item w3-button w3-right w3-hide-large myBtnstyle2" href="#myFooter" onclick="w3_close()" >Contact</a>
+        <!-- <a href="#" class="w3-bar-item w3-button w3-right w3-hide-large myBtnstyle2">中/En</a> -->
+        <a class="w3-bar-item w3-button w3-right w3-hide-large myBtnstyle2" href="https://www.phys.sinica.edu.tw/" target="_blank" >IoP</a>
+
+      </div>
+    </div>
+
+    <!--__________________________________ Sidebar (desktop)____________________________________________-->
+    <nav class="w3-sidebar w3-theme-l3 w3-bar-block w3-collapse w3-large w3-animate-left gradcolor w3-card-4" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-padding w3-hover-white w3-hide-large w3-round-xxlarge" title="Close Menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <h3 class="w3-bar-item titlefont"><b>Keng-Hui Lin's Lab</b></h3>
+
+      <a class="w3-bar-item w3-button animbutton" href="index.htm#news" onclick="w3_close()">News</a>
+      <a class="w3-bar-item w3-button animbutton " href="index.htm#members" onclick="w3_close()">Members</a>
+      <!-- <a class="w3-bar-item w3-button animbutton " href="index_alumni.htm" onclick="w3_close()">Alumni</a> -->
+      <a class="w3-bar-item w3-button animbutton " href="index.htm#research" onclick="w3_close()">Research Focus</a>
+      <a class="w3-bar-item w3-button animbutton " href="index.htm#publications" onclick="w3_close()">Publications</a>
+      <a class="w3-bar-item w3-button animbutton " href="index_facility_gallery.htm#facility" onclick="w3_close()">Facilities</a>
+      <a class="w3-bar-item w3-button animbutton " href="index.htm#openings" onclick="w3_close()">Openings</a>
+      <a class="w3-bar-item w3-button animbutton " href="index_facility_gallery.htm#gallery" onclick="w3_close()">Gallery</a>
+      <a class="w3-bar-item w3-button animbutton " href="index.htm#extra" >Extra</a>
+      <div class="w3-display-bottomleft" style="position:absolute;">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small myBtnstyle2" href="https://www.phys.sinica.edu.tw/" target="_blank" >Institute of Physics</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small myBtnstyle2" href="http://scholar.google.com/citations?hl=en&amp;user=XPg4_ToAAAAJ" target="_blank" >Follow us on Google Scholar</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small myBtnstyle2" href="#myFooter" onclick="w3_close()" >Contact</a>
+        <!-- <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small myBtnstyle2" href="#" >中文/english</a> -->
+      </div>
+    </nav>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!--____________________________ Go top top button_________________________________-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+
+  <main class="w3-main" style="margin-left:300px">
+    <div class="w3-content w3-padding-large" style="font-size:18px">
+    </br>
+    <p>早在兩千五百年前瑪雅人就發現從橡膠樹取出來的橡膠加上酸液, 就會固化, 用這樣來做橡膠鞋. 只是這種橡膠些隨著時間會越來越硬, 到最後脆烈, 原因是這裡橡膠是靠氧化來 crosslink 橡膠裡的高分子, 這氧化反應不會停止, 橡膠過度 crosslinked 就變得 brittle 了. 一直到 1839 年, Charles Goodyear 發現把橡膠丟到含硫的熱液煮, 也會產生橡皮, 並且這彈性能維持很久. 這個技術改變了做輪子的技術 (He did reinvent the wheel!) 後來固特異公司就是紀念他而命名的. <br />
+      <br />
+      要了解橡皮彈性的來源, 先來講它的微觀結構. 橡皮是高分子所構成的, 可以將高分子想成是細細長長的麵線, 只是這麵線會有熱運動, 所線一直彎來動去,要描述這樣的高分子有幾個比較重要的模型 -- random walk, self-avoiding walk, 和 worm-like chain. 在不同的情況下, 用不同的模型. 從這微觀的模型, 可以得到一個很重要的概念, 這些高分子被拉長時, 是有彈性的, 並且彈性的來源是謪(entropy) -- 也就是高分子喜歡到處亂動的這個趨勢, 所以拉長時, 限制了他能亂動空間的可能性. 所以這種彈簧和我們一般所熟知的彈簧很不同, 一般彈簧是靠分子和分子之間的鍵結力, 所以溫度上升時, 一般彈簧的彈性下降, 但謪彈簧(entropic spring)的彈性上升.&nbsp; (看下圖)</p>
+      </br>
+      <table class="w3-content" style="border-style: double;border-width: 3px;background-color:white;">
+          <tbody>
+              <tr>
+                  <th height="187" background="images/balata/entropicsp.jpg" width="218" scope="row"><img alt="" src="images/entropicsp(1).jpg" />&nbsp;</th>
+                  <td width="465">
+                  <p>A. 高分子拉到最長. 力最大. Entropy 最低. (只有一種組態)<br />
+                  &nbsp;</p>
+                  <p>B. 高分子部份拉長. 須要一些力, 有些 Entropy. (有很多方式)<br />
+                  &nbsp;</p>
+                  <p>C. 高分子完全沒拉. 不需要力. Entropy 最高 (有最多組態)</p>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+      <p>再回到橡皮的彈性, 所以如果我們微觀的來看橡皮, 組成橡皮的高分子在某些地方被打結(crosslinked), 但沒打結的地方, 其實還是動來動去像個 random coil, 是個 entropic spring. 假設巨觀上拉長的形變在微觀上也是成比例的形變, 橡皮的彈性就是這些小謪彈簧的加總. 也就是說橡皮彈性也是隨著溫度上升而上升, 溫度下降而下降.</p>
+      </br>
+      <table class="w3-content" style="border-style: double;border-width: 3px;background-color:white;">
+          <tbody>
+              <tr>
+                  <th height="166" background="images/balata/polymer_gel.jpg" width="132" scope="row">&nbsp;<img alt="" src="images/polymer_gel(1).jpg" /></th>
+                  <td width="552">橡膠微觀示意圖: 紅點是 crosslinked sites. 黑線是高分子.</td>
+              </tr>
+          </tbody>
+      </table>
+      <p>不要小看彈性隨溫度下降而下降的重要性. 美國太空梭挑戰者爆炸的原因就是 NASA 工程師輕忽這個保持真空密合 O-ring 在高空低溫會失效的事實, 造成 6 名太空人死亡, 大筆金錢損失, 太空科技的停頓. 查出挑戰者號失事的諾貝爾獎得主費曼(Richard Feynman)在發現這原因後, 在電視記者會做了現場實驗示範, 將一個 O-ring 丟到冰水, O-ring 就失去彈性了. 並且講了, &rdquo;For a successful technology, reality must take precedence over public relations, for nature cannot be fooled.&rdquo; <br />
+      <br />
+      我希望在這門課大家不只學到橡皮彈性的物理, 也記住費曼的話, 將來你們很有可能是未來的工程師或科學家, 對觀察到的事件誠實報告與堅持, 是學科學最基本的精神.</p>
+    </div>
+
+
+    <footer id="myFooter">
+      <div class="w3-container w3-padding-32" style="background-color:rgb(29, 34, 39)">
+        <h5 class="myfooter"><i class="fa fa-address-book" aria-hidden="true"></i>&emsp;中央研究院物理研究所 Institute of Physics, Academia Sinica</h5>
+        <h5 class="myfooter"><i class="fa fa-map-marker" aria-hidden="true"></i>&emsp;台北市115南港區研究院路二段128號 No. 128, Sec. 2, Academia Rd., Nangang Dist., Taipei City 115201, Taiwan (R.O.C.)</h5>
+        <h5 class="myfooter"><i class="fa fa-phone" aria-hidden="true"></i></i>&emsp;Tel:886-2-2788-0058 </h5>
+        <h5 class="myfooter"></i><i class="fa fa-fax" aria-hidden="true"></i>&emsp;Fax:886-2-2783-4187 *管理區*</h5>
+      </div>
+      <div class="w3-container w3-theme-l1">
+        <h6>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" style="background-color:transparent">w3.css</a>, designed by Yu-Jung</h6>
+      </div>
+    </footer>
+
+<!-- END MAIN -->
+  </main>
+<!-- _______other infos______-->
+<!-- <section></section> -->
+
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+<!-- jQuery library -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+
+<!-- Latest compiled JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+<!-- Latest compiled and minified CSS -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+<!-- Latest compiled JavaScript -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="effect-min.js"></script>
+</html>

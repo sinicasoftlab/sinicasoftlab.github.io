@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3-me.css">
+    <link rel="icon" type="image/png" href="images/favicon2.png">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css"> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-brown.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Research - KH Lin's Lab 2023</title>
+</head>
+<body>
+    <!-- ____________________________ Loader ____________________________ -->
+  <div id="loading"><span class="loader"></span></div>
+
+    <!--____________________________ Navigation bar (mobile)_________________________________-->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme-l3 w3-top w3-left-align w3-medium">
+        <a class="w3-bar-item w3-button w3-left w3-hide-large w3-large w3-theme-l1 w3-hover-white" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a class="w3-bar-item w3-button w3-right w3-hide-large myBtnstyle2" href="http://scholar.google.com/citations?hl=en&amp;user=XPg4_ToAAAAJ" target="_blank" >Google Scholar</a>
+        <a class="w3-bar-item w3-button w3-right w3-hide-large myBtnstyle2" href="#myFooter" onclick="w3_close()" >Contact</a>
+        <!-- <a href="#" class="w3-bar-item w3-button w3-right w3-hide-large myBtnstyle2">中/En</a> -->
+        <a class="w3-bar-item w3-button w3-right w3-hide-large myBtnstyle2" href="https://www.phys.sinica.edu.tw/" target="_blank" >IoP</a>
+
+      </div>
+    </div>
+
+    <!--__________________________________ Sidebar (desktop)____________________________________________-->
+    <nav class="w3-sidebar w3-theme-l3 w3-bar-block w3-collapse w3-large w3-animate-left gradcolor w3-card-4" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-padding w3-hover-white w3-hide-large w3-round-xxlarge" title="Close Menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <h3 class="w3-bar-item titlefont"><b>Keng-Hui Lin's Lab</b></h3>
+
+      <a class="w3-bar-item w3-button animbutton" href="index.htm#news" onclick="w3_close()">News</a>
+      <a class="w3-bar-item w3-button animbutton " href="index.htm#members" onclick="w3_close()">Members</a>
+      <!-- <a class="w3-bar-item w3-button animbutton " href="index_alumni.htm" onclick="w3_close()">Alumni</a> -->
+      <a class="w3-bar-item w3-button animbutton " href="#" onclick="w3_close()">Research Focus</a>
+      <a class="w3-bar-item w3-button animbutton " href="index.htm#publications" onclick="w3_close()">Publications</a>
+      <a class="w3-bar-item w3-button animbutton " href="index_facility_gallery.htm#facility" onclick="w3_close()">Facilities</a>
+      <a class="w3-bar-item w3-button animbutton " href="index.htm#openings" onclick="w3_close()">Openings</a>
+      <a class="w3-bar-item w3-button animbutton " href="index_facility_gallery.htm#gallery" onclick="w3_close()">Gallery</a>
+      <a class="w3-bar-item w3-button animbutton " href="index.htm#extra" >Extra</a>
+      <div class="w3-display-bottomleft" style="position:absolute;">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small myBtnstyle2" href="https://www.phys.sinica.edu.tw/" target="_blank" >Institute of Physics</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small myBtnstyle2" href="http://scholar.google.com/citations?hl=en&amp;user=XPg4_ToAAAAJ" target="_blank" >Follow us on Google Scholar</a>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small myBtnstyle2" href="#myFooter" onclick="w3_close()" >Contact</a>
+        <!-- <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small myBtnstyle2" href="#" >中文/english</a> -->
+      </div>
+    </nav>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!--____________________________ Go top top button_________________________________-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+
+
+    <!-- Quick navigation buttons -->
+    <div class="customunderline2 floatingbutton">
+      <strong>Quick link</strong>
+      <br/>
+    <ul style="list-style-type: none; padding-left:20px;padding-right:20px;">
+      <li><a href="#microfluidic"><button class="simplebutton2 myBtnstyle">
+        Fabricating Monodisperse Foam Scaffolds and Novel Materials by Microfluidics
+      </button></a></li>
+      <li><a href="#tissuecells"><button class="simplebutton2 myBtnstyle">
+        Morphology and organization of tissue cells in the monodisperse foam scaffolds
+      </button></a></li>
+      <li><a href="#architecture"><button class="simplebutton2 myBtnstyle">
+        Building Epithelial Tissues
+      </button></a></li>
+      <li><a href="#3dtracforce"><button class="simplebutton2 myBtnstyle">
+        3D Traction Force on a Negatively Curved Substrate
+      </button></a></li>
+      <li><a href="#mechanics"><button class="simplebutton2 myBtnstyle">
+        Mechanics of Ordered Solid Foam
+      </button></a></li>
+    </ul>
+  </div>
+
+  <main class="w3-main" style="margin-left:300px">
+      <!--___________________________research_______________________-->
+    <div class="w3-margin w3-padding-large">
+      </br>
+      <h1>Selected Research Projects</h1>
+      <div style="margin-top:50px;margin-bottom:200px;">
+        <ul style="list-style-type: none;">
+          <li><a href="#microfluidic" class="myBtnstyle" style="font-size:18px;line-height: 40px;text-decoration:none;">Fabricating Monodisperse Foam Scaffolds and Novel Materials by Microfluidics</a></li>
+          <li><a href="#tissuecells" class="myBtnstyle" style="font-size:18px;line-height: 40px;text-decoration:none;">Morphology and organization of tissue cells in the monodisperse foam scaffolds</a></li>
+          <li><a href="#architecture" class="myBtnstyle" style="font-size:18px;line-height: 40px;text-decoration:none;">Building Epithelial Tissues</a></li>
+          <li><a href="#3dtracforce" class="myBtnstyle" style="font-size:18px;line-height: 40px;text-decoration:none;">3D Traction Force on a Negatively Curved Substrate</a></li>
+          <li><a href="#mechanics" class="myBtnstyle" style="font-size:18px;line-height: 40px;text-decoration:none;">Mechanics of Ordered Solid Foam</a></li>
+        </ul>
+      </div>
+<!--___________________________Fabricating_______________________-->
+      <h3 id="microfluidic"><strong>Fabricating Monodisperse Foam Scaffolds and Novel Materials by Microfluidics</strong></h3>
+      <p>Our lab has invented a simple, inexpensive method to fabricate scaffolds of monodisperse ordered pores. This technology has been transferred to <a href="http://www.bbbmd.com/ch/index.php">Bio-byblos Biomedical Company</a>. We have engineered several types of microfluidic device suited for fabricating scaffolds made of hydrogels containing alginate, gelatin, and polyacrylamide.</p>
+      <p style="text-align:center"><img alt="" class="w3-image" width="800" src="img_research/Fig1_scaffold_fabrication.jpg"  /></p>
+
+      <p style="padding-left:100px"><strong>Monodisperse foam scaffold fabrication.</strong> (Left to Right) Monodisperse liquid foam is generated by a microfluidic device self-assembled into crystalline order. The liquid foam is gelled into solid foam; the bubbles become topologically closed pores in the solid foam. Finally, the closed-pore solid foam opens via degassing under vacuum while immersed in liquid solution. The open-cell solid foam is treated with appropriate chemistry for use as a scaffold for 3D cell culture.
+      </p>
+      <p style="text-align: left"><img alt="" src="img_research/bubble.gif" /></p>
+      <p>In addition to foam scaffolds, we employ similar strategy of biphasic flow to generate microspheres. We continue to design new 3D microenvironments to elucidate the role of dimensionality in cell culture.</p>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+<!--___________________________Morphology_______________________-->
+      <h3 id="tissuecells"><strong>Morphology and Organization of Tissue Cells in Monodisperse Foam Scaffolds</strong></h3>
+      <p>Cells of distinct tissue types cultured in our foam scaffolds display appropriate physiological, morphological and functional characteristics: epithelial cells form cyst-like structures and polarized inside pores, myoblasts adopt a tubular structure and fuse into myotubes, and fibroblasts, which reside in connective tissues, exhibit a wide variety of morphologies. Although the foam scaffolds do not resemble the extracellular matrix of native muscle and connective tissues, the cells preserve their characteristic morphologies in the foam scaffolds. Scaffolds with uniform pores can thus provide a platform for systematic study of 3D cell-matrix interactions and a rich set of cellular behaviors</p>
+      <p style="text-align: center"><img alt="" class="w3-image" width="800" src="img_research/tissue.jpg" /></p>
+
+      <p style="padding-left:100px"><strong>Comparison of cells in spherical pores (top).</strong> (a) Mardin-Darby Canine Kidney cells form confluent layer in the pore. (b) C2C12 myoblasts differentiate into a myotube in the scaffold. (c) 3T3 fibroblast exhibits spindle morphology.</p>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+<!--___________________________Building_______________________-->
+      <h3 id="architecture"><strong>Building Epithelial Tissues</strong></h3>
+      <p>In the body, epithelial cells exhibit highly polarized organization and perform a wide variety of specialized functions such as transport, absorption, and secretion. Individual cell surfaces are divided into two domains, an apical domain and a basolateral domain, which are separated by tight junctions that circle around the apex of the cell. These domains often form a tubular (duct) or spherical (cyst) structure with a lumen inside. Little is understood about how tissues coordinate individual cells across space and time to function as an organized community. Currently, <em>in vitro.</em> cysts are grown using a bottom-up approach that relies on self-organization from a single cell. If we understand the principles of tissue morphogenesis, we should be able to design an appropriate scaffold to generate cysts by a top-down approach.</p>
+      <p style="text-align: center"><img alt="" class="w3-image" src="img_research/research.png" /></p>
+      <p style="margin-left:200px">Reconstructed image of a cyst with nuclei (cyan) and primary cilia (yellow)</p>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+<!--___________________________3D Traction Force_______________________-->
+      <h3 id="3dtracforce"><strong>3D Traction Force on a Negatively Curved Substrate</strong></h3>
+      <p>Measuring traction forces exerted by cells on elastic substrates is crucial to establishing a quantitative understanding of the regulation of cell adhesions, morphology, and migration. We are currently developing a strain-based method to measure 3D traction force on a negatively curved surface. The strain field is computed by tracking fiducial markers embedded in the scaffold, and then the stress field is calculated by the finite element method.</p>
+      <p style="text-align: center"><img alt="" class="w3-image" width="800" src="img_research/traction_force.png" /></p>
+      <p><strong>Measuring traction force.</strong> (Left) Micrograph of a cell in a negatively curved substrate, with beads serving as fiducial markers. (Middle) Tracking bead movement near a cell extension. (Right) The resulting traction stress map.</p>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+<!--___________________________Mechanics_______________________-->
+      <h3 id="mechanics"><strong>Mechanics of Ordered Solid Foam</strong></h3>
+      <p>Solid foam, also known as &quot;cellular solid&quot;, which is an important class of engineering materials consists of an assembly of cells with solid edges or faces that are packed together to fill space. These materials are abundant in daily life; natural cellular materials include wood, cork, cancellous bone, and so on. The manmade cellular materials are widely used as thermal insulation, battery electrodes, cushions, shock absorbers, structural supports, and insulators. It is useful and common material and yet it is under-studied subject. The mechanical properties of solid foams are determined by the cell structure and by the mechanical behaviors of the solid. Despitethe ubiquity of these materials, there is lack of research;that includes boththeoretical models describing real samples and experimental observations of well-controlled components for comparison with theoretical models. More efficient utilization of foam materials requires a detailed understanding of their mechanical behaviors. We are engineering an ideal sample for microscopic observation and macroscopic measurement of mechanical properties such as the Young&rsquo;s modulus, storage modulus, and Poisson Ratio. our investigations will yield fundamental knowledge of this class of materials and motivate future light-weight material development and research.</p>
+      <br/><br/><br/><br/>
+    </div>
+    </div>
+
+
+
+
+
+
+    <footer id="myFooter">
+      <div class="w3-container w3-padding-32" style="background-color:rgb(29, 34, 39)">
+        <h5 class="myfooter"><i class="fa fa-address-book" aria-hidden="true"></i>&emsp;中央研究院物理研究所 Institute of Physics, Academia Sinica</h5>
+        <h5 class="myfooter"><i class="fa fa-map-marker" aria-hidden="true"></i>&emsp;台北市115南港區研究院路二段128號 No. 128, Sec. 2, Academia Rd., Nangang Dist., Taipei City 115201, Taiwan (R.O.C.)</h5>
+        <h5 class="myfooter"><i class="fa fa-phone" aria-hidden="true"></i></i>&emsp;Tel:886-2-2788-0058 </h5>
+        <h5 class="myfooter"></i><i class="fa fa-fax" aria-hidden="true"></i>&emsp;Fax:886-2-2783-4187 *管理區*</h5>
+      </div>
+      <div class="w3-container w3-theme-l1">
+        <h6>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" style="background-color:transparent">w3.css</a>, designed by Yu-Jung</h6>
+      </div>
+    </footer>
+
+<!-- END MAIN -->
+  </main>
+<!-- _______other infos______-->
+<!-- <section></section> -->
+
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+<!-- jQuery library -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+
+<!-- Latest compiled JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+<!-- Latest compiled and minified CSS -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+<!-- Latest compiled JavaScript -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="effect-min.js"></script>
+</html>
