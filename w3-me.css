@@ -604,12 +604,13 @@ header{
     border-radius:0px;
     /* box-shadow: 0px 0px 50px black; */
     background-color:transparent;
+    /* background-color:blue; */
     /* backdrop-filter: blur(10px); */
     z-index:0;
     /* overflow: visible; */
     /* background-size: 400px; */
     /* padding-top: 80px; */
-    padding:0px 30px 140px 30px;
+    padding:0px 30px 300px 30px;
     /* margin-bottom:5px; */
     margin:0px !important;
 }
@@ -618,19 +619,44 @@ header{
         padding:0px 16px !important;
     }
     * h6, h5, h4{
-        line-height: 1.4 !important;
+        /* line-height: 1.4 !important; */
+        font-size: 14px !important;
         /* padding-top:5px ;
         padding-bottom:5px; */
     }
+    * h1, h2, h3{
+        /* line-height: 1.4 !important; */
+        font-size: 22px !important;
+    }
+    * a, p{
+        /* line-height: 1.4 !important; */
+        font-size: 14px !important;
+    }
+    .myBtnstyle{
+        font-size: 14px !important;
+    }
+
 }
 @media (max-width:992px){
     .w3-bar-item{
-        padding:0px 16px !important;
+        padding:0px 16x !important;
     }
     * h6, h5, h4{
-        line-height: 1.4 !important;
+        /* line-height: 1.4 !important; */
+        font-size: 14px !important;
         /* padding-top:5px ;
         padding-bottom:5px; */
+    }
+    * h1, h2, h3{
+        /* line-height: 1.4 !important; */
+        font-size: 22px !important;
+    }
+    * a, p{
+        /* line-height: 1.4 !important; */
+        font-size: 14px !important;
+    }
+    .myBtnstyle{
+        font-size: 14px !important;
     }
     /* .bgcircles span{
         animation:none;
@@ -647,7 +673,7 @@ header{
     .membercontain{
         /* backdrop-filter: blur(0px); */
         /* box-shadow: none; */
-        padding:0px 30px 400px 30px;
+        padding:0px 30px 400 30px;
     }
     .memberimagout{
         height: 180px;width:180px;
@@ -679,7 +705,7 @@ header{
         height: 300px;width:300px;
     }
     .membercontain{
-        padding:0px 30px 300px 30px;
+        padding:0px 30px 500px 30px;
     }
     .memberimagout{
         height: 300px;width:300px;
@@ -697,6 +723,10 @@ header{
         height:480px;
         width:480px;
         transform: translateY(-380px) translateX(0px);
+    }
+    a{
+        /* line-height: 1.4 !important; */
+        font-size: 18px !important;
     }
 }
 .membercontain h4{
@@ -816,9 +846,6 @@ header{
     }
     .fadeIn-bottom{
         top: 70% !important; /* can rise text */
-    }
-    .smallfont{
-        font-size:18px !important;
     }
 }
 .content-text{
@@ -1364,7 +1391,7 @@ button:disabled:hover {
     background-repeat: repeat;
     position:relative;
     width: 100%;
-    height: 600px;
+    height: 400px;
     margin:0px !important;
     background-color:black;
     background-image: url("images/MAX_Composite-RGB-proximalC.png");
@@ -1475,7 +1502,7 @@ button:disabled:hover {
 }
 a .simplebutton{
     /* font-weight:bold; */
-    font-size:20px !important;
+    /* font-size:20px !important; */
     /* position:relative; */
     /* display:block; */
     /* margin:20px; */
